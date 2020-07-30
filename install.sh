@@ -9,3 +9,6 @@ cd powerline-shell
 python setup.py install
 cd ..
 rm -rf powerline-shell
+
+# bashrc
+cp ./.bashrc $HOME
