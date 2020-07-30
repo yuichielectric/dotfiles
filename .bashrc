@@ -1,8 +1,6 @@
-# Prompt setting
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
-
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+source .shells/defaults
+source .shells/functions
+source .shells/exports
+source .shells/alias
+source .shells/prompt   # Fancy prompt with time and current working dir
+source .shells/git      # Conveniences - Display current branch etc
