@@ -1,6 +1,6 @@
-source .shells/defaults
-source .shells/functions
-source .shells/exports
-source .shells/alias
-source .shells/prompt   # Fancy prompt with time and current working dir
-source .shells/git      # Conveniences - Display current branch etc
+source $HOME/.shells/defaults
+source $HOME/.shells/functions
+source $HOME/.shells/exports
+source $HOME/.shells/alias
+source $HOME/.shells/prompt   # Fancy prompt with time and current working dir
+source $HOME/.shells/git      # Conveniences - Display current branch etc
