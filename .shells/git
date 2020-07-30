@@ -1,8 +1,5 @@
 #!/bin/bash 
 
-source /etc/bash_completion.d/git 
-source /etc/bash_completion.d/git5 
-
 # Very useful for stash handling
 function show-stash() 
 {
