@@ -1,3 +1,5 @@
 #!/bin/sh
 
-source ~/.bashrc
+cp .bashrc $HOME
+cp -R .shells $HOME
+source $HOME/.bashrc
