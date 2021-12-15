@@ -49,6 +49,9 @@ shopt -s cdspell
 shopt -s dotglob
 shopt -s nocaseglob
 
+# emacs key binding
+bindkey -e
+
 
 ############## SYSTEM ################
 
