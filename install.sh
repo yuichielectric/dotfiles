@@ -11,11 +11,4 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.o
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # .zshrc
-echo "
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-plugins=( 
-    # other plugins...
-    zsh-autosuggestions
-)
-eval "$(starship init zsh)"
-" >> $HOME/.zshrc
+cp .zshrc $HOME/
