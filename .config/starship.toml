@@ -1,47 +1,64 @@
-# Downloaded from https://starship.rs/presets/pure-preset.html
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$cmd_duration\
-$line_break\
-$python\
-$character"""
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+[character]
+format = "[\\$](green bold) "
 
 [directory]
-style = "blue"
-
-[character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
+truncation_length = 3
 
 [git_branch]
-format = "[$branch]($style)"
-style = "bright-black"
+symbol = ''
+format = '\([$symbol$branch(:$remote_branch)]($style)\)'
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
-stashed = "≡"
-
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
-
-[cmd_duration]
-format = "[$duration]($style) "
-style = "yellow"
+format = '([$all_status$ahead_behind]($style) )'
+conflicted = ''
+ahead = ''
+behind = ''
+diverged = ''
+up_to_date = '✓'
+untracked = ''
+stashed = ''
+modified = '🔥'
+staged = ''
+renamed = ''
+deleted = ''
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+disabled = true
+
+[lua]
+disabled = true
+
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[aws]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[java]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[golang]
+disabled = true
+
+[rust]
+disabled = true
+
+[c]
+disabled = true
